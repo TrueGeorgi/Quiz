@@ -1,7 +1,7 @@
 # Quiz
 A console based Quiz/Trivia game
 
-## The game
+## The Game
 
 At the begging of the game the player must enter their username. After this they get to choose if they want to start playing, add a question themselfs or directly quit the game.
 
@@ -13,6 +13,6 @@ The player recieves a question and he tries to guess the correct answer. Then he
 
 The player may create a question himself and add it to the poll of already existing questions. He must write the body of the question and give the correct answer together with 2 wrong options.
 
-## End of the game
+###### End of the game
 
 When the player had enough, he can choose to exit the game, where he will get a summary of how he performed.

@@ -228,6 +228,30 @@ public class Main {
                 'C'
         );
         questions.add(twelve);
+        Question thirteen = new Question(
+                "Which football club has won the most Premier League titles as of the 2021-2022 season?",
+                "Manchester United",
+                "Liverpool",
+                "Arsenal",
+                'A'
+        );
+        questions.add(thirteen);
+        Question fourteen = new Question(
+                "Which planet in our solar system is known as the \"Red Planet\"",
+                "Mars",
+                "Jupiter",
+                "Saturn",
+                'A'
+        );
+        questions.add(fourteen);
+        Question fifteen = new Question(
+                "Which country is known for its national dish \"Pad Thai\"",
+                "India",
+                "Thailand",
+                "Vietnam",
+                'B'
+        );
+        questions.add(fifteen);
 
         return questions;
     }

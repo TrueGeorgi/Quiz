@@ -12,7 +12,8 @@ public class Main {
         List<String> startingMenu = new ArrayList<>();
         startingMenu.add("A. Play");
         startingMenu.add("B. Add a question");
-        startingMenu.add("C. Exit the game");
+        startingMenu.add("C. How many questions does the Quiz have?");
+        startingMenu.add("D. Exit the game");
 
         boolean continueStartingMenu = true;
 
@@ -77,13 +78,17 @@ public class Main {
                     questions.add(outsideQuestion);
                     break;
                 case "C":
+                    System.out.println("The quiz has " + questions.size() + " questions.");
+                    System.out.println();
+                    break;
+                case "D":
                     continueStartingMenu = false;
                     break;
             }
         }
         System.out.println();
         int totalAnswers = player.getRightAnswers() + player.getWrongAnswers();
-        System.out.printf("User %s had played %d times and had:%n-%d correct answers%n-%d wrong answers.%n",
+        System.out.printf("User %s had played %d times and had:%n* %d correct answers%n* %d wrong answers.%n",
                 player.getUsername(),
                 totalAnswers,
                 player.getRightAnswers(),
@@ -207,6 +212,22 @@ public class Main {
                 'B'
         );
         questions.add(ten);
+        Question eleven = new Question(
+                "Which German city is famous for its Karneval celebration?",
+                "Cologne",
+                "Munich",
+                "Hamburg",
+                'A'
+        );
+        questions.add(eleven);
+        Question twelve = new Question(
+                "Which river runs through the capital city of Berlin?",
+                "Danube",
+                "Rhine",
+                "Spree",
+                'C'
+        );
+        questions.add(twelve);
 
         return questions;
     }

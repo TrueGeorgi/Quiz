@@ -16,3 +16,8 @@ The player may create a question himself and add it to the poll of already exist
 ###### End of the game
 
 When the player had enough, he can choose to exit the game, where he will get a summary of how he performed.
+
+## Update history
+
+#### 10.05.2023 Update
+  * Added 5 new questions

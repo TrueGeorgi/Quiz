@@ -15,14 +15,14 @@ public class Main {
         startingMenu.add("C. How many questions does the Quiz have?");
         startingMenu.add("D. Exit the game");
 
-        boolean continueStartingMenu = true;
+        boolean isStartingMenu = true;
 
         System.out.println("Welcome to the Quiz game. How should we call you?");
         String username = scanner.nextLine();
         Player player = new Player(username);
         System.out.println("Ok, " + username + ". Let's start.");
 
-        while (continueStartingMenu) {
+        while (isStartingMenu) {
 
             System.out.println("What would you like to do? Choose the letter of the action you would like to take.");
 
@@ -82,7 +82,7 @@ public class Main {
                     System.out.println();
                     break;
                 case "D":
-                    continueStartingMenu = false;
+                    isStartingMenu = false;
                     break;
             }
         }
@@ -97,6 +97,7 @@ public class Main {
         System.out.println("For feedback please feel free to contact me via mail at: Georgi.iliev9191@gmail.com");
 
     }
+
     public static String correctLetterInput(int length) {
         Scanner scanner = new Scanner(System.in);
 
@@ -120,12 +121,14 @@ public class Main {
         }
         return input;
     }
+
     public static void displayStartingMenu(List<String> startingMenu) {
         for (int i = 0; i < startingMenu.size(); i++) {
             System.out.println(startingMenu.get(i));
         }
     }
-    public static List<Question> addQuestions () {
+
+    public static List<Question> addQuestions() {
 
         List<Question> questions = new ArrayList<>();
 
